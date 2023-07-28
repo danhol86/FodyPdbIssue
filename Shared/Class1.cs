@@ -11,7 +11,6 @@ namespace Shared
             var myassembly = Assembly.GetEntryAssembly().Location;
             var mypdb = myassembly.Replace(".dll", ".pdb");
 
-
             var pdbtext = File.ReadAllText(myassembly);
 
             var containsnewpath = pdbtext.Contains("MyNewPath");
